@@ -1,0 +1,50 @@
+:root { 
+  --color-primary: #C2410C;
+  --color-secondary: #FFEDD5;
+  --color-accent: #0F766E;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    margin: 0px 80px;
+    justify-content: space-between;
+}
+
+.header-icon i{
+    font-size: 20px;
+}
+
+.header-logo span{
+    color: var(--color-primary);
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    line-height: 40px;
+}
+
+nav button{
+    padding: 10px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10px;
+}
+
+.header-icon{
+    display: none;
+}
+
