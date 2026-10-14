@@ -110,7 +110,7 @@ header {
     color: var(--text-color);
     padding: 6px 14px;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size:  13px;
     font-weight: 600;
 }
 
@@ -166,3 +166,87 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
+.events-section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.events-title{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.events-title h3{
+    font-size: 25px;
+}
+
+.events-title p{
+    color: var(--color-primary);
+    font-size: 13px;
+}
+
+.events-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card{
+    border-radius: 10px;
+    border: 1px solid #dad8d8;
+}
+
+.event-card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.event-card .card-content{
+    padding: 10px 20px;
+    line-height:20px;
+}
+
+.card-header p{
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.conference {
+    background-color: var(--color-accent);
+    color: var(--text-color);
+}
+
+.event-type{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.card-header{
+    margin-bottom: 20px;
+}
+
+.card-header h4{
+    font-size: 20px;
+}
+
+.card-details{
+    line-height: 30px;
+}
+
+.card-details p{
+    color: #57534E;
+}
+
+.card-details p i {
+    margin-right: 10px;
+}
+
+.card-details a{
+    color: var(--color-primary);
+}
+
