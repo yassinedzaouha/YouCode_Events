@@ -153,18 +153,17 @@ header {
 }
 
 .hero-image {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
-    width: 100%;
     background-color: white;
     border-radius: 10px;
-    height: 200px;
 }
 
 .hero-image img {
-    width: 200px;
-    margin: 10% 20%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 80%;
+    border-radius: 30px;
 }
 
 .events-section {
@@ -248,5 +247,18 @@ header {
 
 .card-details a{
     color: var(--color-primary);
+}
+
+.statistics {
+    display: grid;
+    padding: 40px 20px;
+    background-color: var(--color-primary);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    color: white;
+}
+
+.stat h5{
+    font-size: 30px;
 }
 
