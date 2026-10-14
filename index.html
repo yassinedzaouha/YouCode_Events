@@ -3,10 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youcode events</title>
-    <link rel="stylesheet" href="index.css">
+    <title>YouCode Events</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="header-logo">
+            <h3>YouCode <span>Events</span></h3>
+        </div>
+        
+        <nav class="nav-menu hidden">
+            <ul>
+                <li><a class="current-page" href="#">Accueil</a></li>
+                <li><a href="#">Événements</a></li>
+                <li><a href="#">Intervenants</a></li>
+                <div>
+                    <a href="#" class="btn-nav">S'inscrire</a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-badge">
+                <p>Saison 2026-2027</p>
+            </div>
+            <div class="hero-content">
+                <h1>Tous les événements YouCode, au même endroit</h1>
+                <p>Ateliers, conférences, hackathons et rencontres avec des professionnels : consultez le programme et inscrivez-vous en quelques clics.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Voir les événements</a>
+                <a href="#" class="btn btn-secondary">S'inscrire</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/Capture_decran_2026-10-12_094209.png" alt="YouCode Events Illustration">
+            </div>
+        </section>
+        <section class="events-section">
+            <div class="events-title">
+                <h3>Prochains événements</h3>
+                <p>Tous les événements <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+            <div>
+                <div class="events-cards">
+                    <div class="event-card">
+                        <img src="assets/images/card1.png" alt="event1 image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="event-type">Atelier</p>
+                                <h4>Atelier Flexbox et CSS Grid</h4>
+                            </div>
+                            <div class="card-details">
+                                <p><i class="fa-regular fa-calendar"></i>12 nov. 2026 · 14h00</p>
+                                <p><i class="fa-solid fa-location-dot"></i>Salle Turing, YouCode Safi</p>
+                                <a href="">Voir le détail <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/images/card2.png" alt="event2 image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="conference ">Conférence</p>
+                                <h4>Accessibilité Web : par où commencer ?</h4>
+                            </div>
+                            <div class="card-details">
+                                <p><i class="fa-regular fa-calendar"></i>19 nov. 2026 · 10h00</p>
+                                <p><i class="fa-solid fa-location-dot"></i>Amphithéâtre, YouCode Youssoufia</p>
+                                <a href="">Voir le détail <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/images/card3.png" alt="event3 image">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <p class="event-type">Hackathon</p>
+                                <h4>Hackathon Green Code</h4>
+                            </div>
+                            <div class="card-details">
+                                <p><i class="fa-regular fa-calendar"></i> 28 et 29 nov. 2026</p>
+                                <p><i class="fa-solid fa-location-dot"></i> Campus YouCode Safi</p>
+                                <a href="">Voir le détail <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="statistics">
+            <div class="stat">
+                <h5>40+</h5>
+                <p>événements par an</p>
+            </div>
+            <div class="stat">
+                <h5>25</h5>
+                <p>intervenants</p>
+            </div>
+            <div class="stat">
+                <h5>1 200</h5>
+                <p>événements par an</p>
+            </div>
+            <div class="stat">
+                <h5>40+</h5>
+                <p>événements par an</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <script>
+        let menu_icon = document.querySelector(".header-icon");
+        let navMenu = document.querySelector(".nav-menu");
+        let icon = menu_icon.querySelector("i");
+        let main = document.querySelector("main")
+        menu_icon.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+            if (navMenu.classList.contains("hidden")) {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+                main.style.display ="block";
+            } else {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+                main.style.display ="none"
+            }
+        });
+    </script>
 </body>
 </html>
