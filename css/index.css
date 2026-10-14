@@ -262,3 +262,49 @@ header {
     font-size: 30px;
 }
 
+.categorie {
+    margin: 40px;
+}
+
+.categorie-title h3{
+    font-size: 26px;
+}
+
+.categorie-title {
+    margin-bottom: 30px;
+}
+
+.cat-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px, 1fr));
+    gap: 30px;    
+}
+
+.cat-card{
+    border: 1px solid #E7E5E4;
+    padding: 30px;
+    line-height: 35px;
+    border-radius: 10px;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.cat-card .icon{
+    background-color: var(--color-secondary);
+    display: inline-block;
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+}
+
+.cat-card .icon i{
+    font-size: 20px;
+}
+
+.cat-card h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cat-card p{
+    color: #57534E;
+}
