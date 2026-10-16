@@ -38,7 +38,7 @@
 .input-space{
     width: 100%;
     padding: 12px 14px;
-    border: 1px solid #78716C;
+    border: 2px solid #78716C;
     border-radius: 8px;
     font-size: 0.95rem;
     box-sizing: border-box;
@@ -49,13 +49,16 @@ option{
     color: #57534E;
 }
 
-
 label {
     display: block;
     font-weight: 600;
     font-size: 0.9rem;
     margin-bottom: 8px;
     color: #222;
+}
+
+input, textarea, select{
+    outline: none;
 }
 
 .radio-group {
@@ -104,7 +107,6 @@ label {
     margin-top: 20px;
 }
 
-
 .success-message {
     color: #15803D;
     font-size: 0.8rem;
@@ -117,4 +119,44 @@ label {
     font-size: 0.8rem;
     margin-top: 5px;
     display: none;
+}
+
+.form-input input:invalid:not(:placeholder-shown){
+    border-color: #B91C1C;
+}
+
+.form-input input:valid:not(:placeholder-shown) {
+    border-color: #15803D;
+}
+
+.form-input input:invalid:not(:placeholder-shown){
+    border-color: #B91C1C;
+}
+
+.form-input input:valid:not(:placeholder-shown) {
+    border-color: #15803D;
+}
+
+.form-input input:invalid:not(:placeholder-shown) ~ .error-message{
+    display: block;
+}
+
+.form-input input:valid:not(:placeholder-shown) ~ .success-message {
+    display: block;
+}
+
+.form-input select:user-valid{
+    border-color: #15803D;
+}
+
+.form-input select:user-invalid{
+    border-color: #B91C1C;
+}
+
+.form-input select:user-invalid ~ .error-message{
+    display: block;
+}
+
+.form-input select:user-valid ~ .success-message{
+    display: block;
 }

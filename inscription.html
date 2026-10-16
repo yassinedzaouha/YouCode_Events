@@ -49,6 +49,8 @@
                             <div class="form-input">
                                 <label for="nom">Nom *</label>
                                 <input type="text" class="input-space" id="nom" name="nom" placeholder="Votre nom"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
                             </div>
 
                             <div class="form-input">
@@ -78,17 +80,19 @@
                         <div class="form-input">
                             <label for="evenement">Événement choisi *</label>
                             <select class="input-space" id="evenement" name="evenement" required>
-                                <option value="">Choisir un événement</option>
+                                <option value="" disabled selected>Choisir un événement</option>
                                 <option value="atelier">Atelier</option>
                                 <option value="conference">Conférence</option>
                                 <option value="hackathon">Hackathon</option>
                                 <option value="rencontre">Rencontre</option>
                             </select>
+                            <p class="error-message">selectioner un evenment</p>
+                            <p class="success-message">Champ valide.</p>
                         </div>
                         <label>Niveau *</label>
                         <div class="radio-group">
                             <label>
-                                <input type="radio" name="niveau" value="debutant" required>
+                                <input type="radio" name="niveau" checked value="debutant" >
                                 Débutant
                             </label>
 
