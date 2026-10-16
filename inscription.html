@@ -37,6 +37,96 @@
             <h1>Inscription</h1>
             <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
         </section>
+        <section class="form-section">
+            <div class="form-div">
+                <div class="form-header">
+                    <h2>Vos informations</h2>
+                    <p>Les champs marqués * sont obligatoires.</p>
+                </div>
+                <form>
+                    <div>
+                        <div class="inputs-flex">
+                            <div class="form-input">
+                                <label for="nom">Nom *</label>
+                                <input type="text" class="input-space" id="nom" name="nom" placeholder="Votre nom"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" class="input-space" id="prenom" name="prenom" placeholder="Votre prénom"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+                        </div>
+
+                        <div class="inputs-flex">
+                            <div class="form-input">
+                                <label for="email">Adresse e-mail *</label>
+                                <input type="email" class="input-space" id="email" name="email" placeholder="yassine@exemple" aria-describedby="email-error"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message"> Erreur : saisissez une adresse valide,par exemple nom@domaine.ma.</p>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" class="input-space" id="telephone" name="telephone" placeholder="06 12 34 56 78">
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="evenement">Événement choisi *</label>
+                            <select class="input-space" id="evenement" name="evenement" required>
+                                <option value="" disabled selected>Choisir un événement</option>
+                                <option value="atelier">Atelier</option>
+                                <option value="conference">Conférence</option>
+                                <option value="hackathon">Hackathon</option>
+                                <option value="rencontre">Rencontre</option>
+                            </select>
+                            <p class="error-message">selectioner un evenment</p>
+                            <p class="success-message">Champ valide.</p>
+                        </div>
+                        <label>Niveau *</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="niveau" checked value="debutant" >
+                                Débutant
+                            </label>
+
+                            <label>
+                                <input type="radio" name="niveau" value="intermediaire">
+                                Intermédiaire
+                            </label>
+
+                            <label>
+                                <input type="radio" name="niveau" value="avance">
+                                Avancé
+                            </label>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="message">Message (facultatif)</label>
+                            <textarea class="input-space" id="message" name="message" rows="4"
+                                    placeholder="Vos attentes, vos questions..."></textarea>
+                        </div>
+                        <div class="form-input">
+                            <label class="checkbox-label" for="consentement">
+                                <input type="checkbox" id="consentement" name="consentement" required>
+                                J'accepte que mes données servent à gérer mon inscription. *
+                            </label>
+                        </div>
+                        <div class="form-input ">
+                            <button type="submit" class="submit-btn">
+                                Valider mon inscription
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
 
