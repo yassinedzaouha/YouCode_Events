@@ -20,6 +20,11 @@
     padding: 20px;
 
 }
+
+.card img{
+    width: 30%;
+}
+
 .professional_info{
     display: grid;
     gap: 10px;
