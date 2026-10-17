@@ -63,3 +63,24 @@
     background-color:#57534E;
     border-radius: 6px;
 }
+@media(min-width:768px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+    .partenaires_liste{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1440px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .partenaires_liste{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+    
+}
