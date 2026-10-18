@@ -64,5 +64,27 @@
         </div>
 
     </footer>
+
+     <script>
+        let menu_icon = document.querySelector(".header-icon");
+        let navMenu = document.querySelector(".nav-menu");
+        let icon = menu_icon.querySelector("i");
+        let main = document.querySelector("main")
+        let footer = document.querySelector("footer")
+        menu_icon.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+            if (navMenu.classList.contains("hidden")) {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+                main.style.display ="block";
+                footer.style.display ="block";
+            } else {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+                main.style.display ="none";
+                footer.style.display ="none";
+            }
+        });
+    </script>
 </body>
 </html>
