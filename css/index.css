@@ -323,6 +323,39 @@ header {
     line-height: 25px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+    width: 100%;
+    gap: 30px;
+    line-height: 30px;
+}
+footer li{
+    list-style-type: none;
+}
+footer .YouCode{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+footer ul li , .contact p , div p{
+    font-weight: 100;
+}
+
+img{
+    width: 100%;
+}
+footer .ligne{
+    width: 100%;
+    height: 1px;
+    background-color: #57534E;
+}
+
+
 @media (min-width:768px) {
     header{
         position: static;
@@ -383,6 +416,10 @@ header {
         justify-content: center;
         gap: 20px;
     }
+    
+    footer .YouCode{
+        flex-direction: row;
+    }
 }
 
 @media (min-width:1440px) {
@@ -413,39 +450,14 @@ header {
         display: flex;
         justify-content: space-between;
     }
+    footer .youcode-events{
+        flex: 2;
+    }
+    footer .youcode-events p{
+        width: 60%;
+    }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family:"Bricolage Grotesque", sans-serif;
-}
-footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 5%;
-    width: 100%;
-    gap: 30px;
-    line-height: 30px;
-}
-footer li{
-    list-style-type: none;
-}
-footer .YouCode{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 30px;
-}
-footer .youcode-events p ,ul li , .contact p , div p{
-    font-weight: 100;
 
-}
-
-img{
-    width: 100%;
-}
 
 
