@@ -13,16 +13,16 @@
 <body>
     <header>
         <div class="header-logo">
-            <h3>YouCode <span>Events</span></h3>
+            <a href="index.html"><h3>YouCode <span>Events</span></h3></a>
         </div>
         
         <nav class="nav-menu hidden">
             <ul>
-                <li><a class="current-page" href="#">Accueil</a></li>
-                <li><a href="#">Événements</a></li>
-                <li><a href="#">Intervenants</a></li>
+                <li><a class="current-page" href="index.html">Accueil</a></li>
+                <li><a  href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
                 <div>
-                    <a href="#" class="btn-nav">S'inscrire</a>
+                    <a href="inscription.html" class="btn-nav">S'inscrire</a>
                 </div>
             </ul>
         </nav>
@@ -51,7 +51,7 @@
             </div>
         </section>
         <section class="events-section">
-            <div class="events-title">
+            <div class="events-title flex-event-title">
                 <h3>Prochains événements</h3>
                 <p>Tous les événements <i class="fa-solid fa-arrow-right"></i></p>
             </div>
@@ -61,7 +61,7 @@
                         <img src="assets/images/card1.png" alt="event1 image">
                         <div class="card-content">
                             <div class="card-header">
-                                <p class="event-type">Atelier</p>
+                                <p class="event-type1">Atelier</p>
                                 <h4>Atelier Flexbox et CSS Grid</h4>
                             </div>
                             <div class="card-details">
@@ -75,7 +75,7 @@
                         <img src="assets/images/card2.png" alt="event2 image">
                         <div class="card-content">
                             <div class="card-header">
-                                <p class="conference ">Conférence</p>
+                                <p class="event-type2">Conférence</p>
                                 <h4>Accessibilité Web : par où commencer ?</h4>
                             </div>
                             <div class="card-details">
@@ -89,7 +89,7 @@
                         <img src="assets/images/card3.png" alt="event3 image">
                         <div class="card-content">
                             <div class="card-header">
-                                <p class="event-type">Hackathon</p>
+                                <p class="event-type1">Hackathon</p>
                                 <h4>Hackathon Green Code</h4>
                             </div>
                             <div class="card-details">
@@ -156,6 +156,32 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="YouCode">
+            <div class="youcode-events">
+                <h2>YouCode Events</h2>
+                <p>Les ateliers, conférences, hackathons et rencontres de YouCode réunis au même endroit.
+                </p>
+            </div>    
+
+            <ul>
+                <h4>Navigation</h4>
+                <li><a href=""></a>Accueil</li>
+                <li><a href=""></a>Evénements</li>
+                <li><a href=""></a>intervenants et partenaires</li>
+                <li><a href=""></a>inscription</li>
+            </ul>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>contact@youcode-events.example</p>
+                <p>Youssoufia.Safi.Nador</p>
+            </div>
+        </div>
+        <div class="ligne"></div>
+        <div><p>© 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </div>
+
+    </footer>
 
     <script>
         let menu_icon = document.querySelector(".header-icon");

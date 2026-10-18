@@ -4,9 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscription</title>
-    <link rel="stylesheet" href="inscription.css">
+    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="header-logo">
+            <a href="index.html"><h3>YouCode <span>Events</span></h3></a>
+        </div>
+        
+        <nav class="nav-menu hidden">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <div>
+                    <a href="inscription.html" class="btn-nav">S'inscrire</a>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="header-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1>Inscription</h1>
+            <p>Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
+        </section>
+        <section class="form-section">
+            <div class="form-div">
+                <div class="form-header">
+                    <h2>Vos informations</h2>
+                    <p>Les champs marqués * sont obligatoires.</p>
+                </div>
+                <form>
+                    <div>
+                        <div class="inputs-flex">
+                            <div class="form-input">
+                                <label for="nom">Nom *</label>
+                                <input type="text" class="input-space" id="nom" name="nom" placeholder="Votre nom"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="prenom">Prénom *</label>
+                                <input type="text" class="input-space" id="prenom" name="prenom" placeholder="Votre prénom"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+                        </div>
+
+                        <div class="inputs-flex">
+                            <div class="form-input">
+                                <label for="email">Adresse e-mail *</label>
+                                <input type="email" class="input-space" id="email" name="email" placeholder="yassine@exemple" aria-describedby="email-error"  required>
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message"> Erreur : saisissez une adresse valide,par exemple nom@domaine.ma.</p>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" class="input-space" id="telephone" name="telephone" placeholder="06 12 34 56 78">
+                                <p class="success-message">Champ valide.</p>
+                                <p class="error-message">Champ invalide.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="evenement">Événement choisi *</label>
+                            <select class="input-space" id="evenement" name="evenement" required>
+                                <option value="" disabled selected>Choisir un événement</option>
+                                <option value="atelier">Atelier</option>
+                                <option value="conference">Conférence</option>
+                                <option value="hackathon">Hackathon</option>
+                                <option value="rencontre">Rencontre</option>
+                            </select>
+                            <p class="error-message">selectioner un evenment</p>
+                            <p class="success-message">Champ valide.</p>
+                        </div>
+                        <label>Niveau *</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="niveau" checked value="debutant" >
+                                Débutant
+                            </label>
+
+                            <label>
+                                <input type="radio" name="niveau" value="intermediaire">
+                                Intermédiaire
+                            </label>
+
+                            <label>
+                                <input type="radio" name="niveau" value="avance">
+                                Avancé
+                            </label>
+                        </div>
+
+                        <div class="form-input">
+                            <label for="message">Message (facultatif)</label>
+                            <textarea class="input-space" id="message" name="message" rows="4"
+                                    placeholder="Vos attentes, vos questions..."></textarea>
+                        </div>
+                        <div class="form-input">
+                            <label class="checkbox-label" for="consentement">
+                                <input type="checkbox" id="consentement" name="consentement" required>
+                                J'accepte que mes données servent à gérer mon inscription. *
+                            </label>
+                        </div>
+                        <div class="form-input ">
+                            <button type="submit" class="submit-btn">
+                                Valider mon inscription
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+        <footer>
+        <div class="YouCode">
+            <div class="youcode-events">
+                <h2>YouCode Events</h2>
+                <p>Les ateliers, conférences, hackathons et rencontres de YouCode réunis au même endroit.
+                </p>
+            </div>    
+
+            <ul>
+                <h4>Navigation</h4>
+                <li><a href=""></a>Accueil</li>
+                <li><a href=""></a>Evénements</li>
+                <li><a href=""></a>intervenants et partenaires</li>
+                <li><a href=""></a>inscription</li>
+            </ul>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>contact@youcode-events.example</p>
+                <p>Youssoufia.Safi.Nador</p>
+            </div>
+        </div>
+        <div class="ligne"></div>
+        <div><p>© 2026 YouCode Events — site fictif réalisé en formation.</p>
+        </div>
+
+    </footer> 
+
+
+
+    <script>
+        let menu_icon = document.querySelector(".header-icon");
+        let navMenu = document.querySelector(".nav-menu");
+        let icon = menu_icon.querySelector("i");
+        let main = document.querySelector("main")
+        menu_icon.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+            if (navMenu.classList.contains("hidden")) {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+                main.style.display ="block";
+            } else {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+                main.style.display ="none"
+            }
+        });
+    </script>
 </body>
 </html>

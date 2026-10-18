@@ -1,0 +1,91 @@
+
+
+.cards_intervenants{
+    padding: 30px 5%;
+}
+
+.cards_intervenants h2{
+    margin: 30px 0px;
+}
+.cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.card{
+    border:1px solid #E7E5E4;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.card img{
+    width: 30%;
+}
+
+.professional_info{
+    display: grid;
+    gap: 10px;
+}
+
+.description{
+    color: #57534E;
+    font-width: 100;
+}
+.specialty{
+    color:#C2410C ;
+    font-weight: 100px;
+}
+.partenaires{
+    padding: 20px 5%;
+}
+.partenaires{
+    display: grid;
+    gap:20px;
+}
+.partenaires p{
+    color: #57534E;
+}
+.partenaires_liste{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.partenaire{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.partenaire_logo{
+    width: 24px;
+    height:24px ;
+    background-color:#57534E;
+    border-radius: 6px;
+}
+@media(min-width:768px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+    }
+    .partenaires_liste{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(min-width:1440px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .partenaires_liste{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+    
+}

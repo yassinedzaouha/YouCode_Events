@@ -167,7 +167,7 @@ header {
 }
 
 .events-section {
-    padding: 20px;
+    padding: 20px 5%;
     margin-top: 20px;
 }
 
@@ -215,12 +215,12 @@ header {
     margin-bottom: 10px;
 }
 
-.conference {
+.event-type2 {
     background-color: var(--color-accent);
     color: var(--text-color);
 }
 
-.event-type{
+.event-type1 {
     background-color: var(--color-secondary);
     color: var(--color-primary);
 }
@@ -250,8 +250,8 @@ header {
 }
 
 .statistics {
+    padding: 40px 5%;
     display: grid;
-    padding: 40px 20px;
     background-color: var(--color-primary);
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
@@ -263,7 +263,7 @@ header {
 }
 
 .categorie {
-    margin: 40px;
+    padding: 20px 5%;
 }
 
 .categorie-title h3{
@@ -308,6 +308,54 @@ header {
     color: #57534E;
 }
 
+.hero-section{
+    padding: 30px 5%;
+    background-color: var(--color-secondary);
+}
+
+.hero-section h1{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+.hero-section p{
+    color: #57534E;
+    line-height: 25px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 5%;
+    width: 100%;
+    gap: 30px;
+    line-height: 30px;
+}
+footer li{
+    list-style-type: none;
+}
+footer .YouCode{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+}
+footer ul li , .contact p , div p{
+    font-weight: 100;
+}
+
+img{
+    width: 100%;
+}
+footer .ligne{
+    width: 100%;
+    height: 1px;
+    background-color: #57534E;
+}
+
+
 @media (min-width:768px) {
     header{
         position: static;
@@ -337,12 +385,40 @@ header {
     .nav-menu ul li a{
         font-size: 15px;
     }
+    
+    .hero-section h1{
+        font-size: 35px;
+    }
+
+    .hero-section p{
+        font-size: 1.1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
 
     .hero-buttons{
         flex-direction: row;
     }
     .hero-image img{
         width: 50%;
+    }
+    .events-cards{
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+    .inputs-flex{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    footer .YouCode{
+        flex-direction: row;
     }
 }
 
@@ -353,5 +429,35 @@ header {
     .hero-image img{
         width: 70%;
     }
-    
+
+    .hero-section{
+        padding: 30px 5%;
+    }
+
+    .hero-section h1{
+        font-size: 45px;
+    }
+
+    .hero-section p{
+        font-size: 1.5rem;
+    }
+
+    .events-cards{
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }   
+
+    .flex-event-title{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .youcode-events{
+        flex: 2;
+    }
+    footer .youcode-events p{
+        width: 60%;
+    }
 }
+
+
+
+
